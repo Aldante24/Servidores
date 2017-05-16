@@ -21,14 +21,14 @@ if (!xmlhttp && typeof XMLHttpRequest!='undefined') {
 }
 
 //Función para recoger los datos del formulario y enviarlos por post
-function enviarDatosEmpleado(){
+function enviarDatosServidor(){
 
   //div donde se mostrará lo resultados
   divResultado = document.getElementById('resultado');
   //recogemos los valores de los inputs
-  nom=document.nuevo_empleado.nombre.value;
-  ape=document.nuevo_empleado.apellido.value;
-  web=document.nuevo_empleado.web.value;
+  nom=document.nuevo_servidor.nombre.value;
+  ape=document.nuevo_servidor.apellido.value;
+  web=document.nuevo_servidor.web.value;
 
   //instanciamos el objetoAjax
   ajax=objetoAjax();
@@ -54,8 +54,8 @@ function enviarDatosEmpleado(){
 
 //función para limpiar los campos
 function LimpiarCampos(){
-  document.nuevo_empleado.nombre.value="";
-  document.nuevo_empleado.apellido.value="";
-  document.nuevo_empleado.web.value="";
-  document.nuevo_empleado.nombre.focus();
+  document.nuevo_servidor.nombre.value="";
+  document.nuevo_servidor.apellido.value="";
+  document.nuevo_servidor.web.value="";
+  document.nuevo_servidor.nombre.focus();
 }

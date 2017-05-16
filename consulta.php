@@ -1,10 +1,10 @@
 <?php
 
 //Configuracion de la conexion a base de datos
-$conexion = mysqli_connect ("localhost","root","admin","ajax");
+$conexion = mysqli_connect ("localhost","root","admin","servidores");
 
 //consulta todos los empleados
-$consulta = "SELECT * FROM empleados";
+$consulta = "SELECT * FROM accesos";
 $ejecutar = mysqli_query($conexion,$consulta);
 
 ?>
